@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Count Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .result-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(76, 175, 80, 0.2);
+            padding: 40px 50px;
+            text-align: center;
+            max-width: 400px;
+            border-top: 6px solid #4caf50;
+        }
+        h1 {
+            color: #2e7d32;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        .count {
+            font-size: 64px;
+            font-weight: bold;
+            color: #388e3c;
+            margin: 20px 0;
+        }
+        .label {
+            font-size: 18px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-card">
+        <h1>Analysis Complete</h1>
+        <div class="label">Plants Detected</div>
+        <div class="count">{{ count }}</div>
+        <a href="/" class="btn">Analyze Another Image</a>
+    </div>
+</body>
+</html>
