@@ -23,4 +23,3 @@ python APP.py
 
 ### **UI Preview**
 ![AgriAnalysis Login](assets/login.PNG)
-*Login page with demo credentials for reviewers*
